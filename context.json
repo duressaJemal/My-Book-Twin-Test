@@ -1,0 +1,387 @@
+{
+    "stats": {
+        "books_analyzed": 282,
+        "next_update_at": "2025-01-01T12:00:00Z",
+        "is_pro": false
+    },
+    "twins": [
+        {
+            "id": 1,
+            "label": "Book Twin #1",
+            "dna_match": "High",
+            "summary": {
+                "matching_books_count": 5,
+                "crowned": 2,
+                "liked": 3,
+                "disliked": 0
+            },
+            "matching_books": [
+                {
+                    "title": "Book A1",
+                    "image_url": "./static/img/book-cover.png",
+                    "user_actions": {
+                        "liked": true,
+                        "crowned": true,
+                        "disliked": false
+                    },
+                    "twin_actions": {
+                        "liked": true,
+                        "crowned": true,
+                        "disliked": false
+                    }
+                },
+                {
+                    "title": "Book A2",
+                    "image_url": "./static/img/book-cover.png",
+                    "user_actions": {
+                        "liked": true,
+                        "crowned": false,
+                        "disliked": false
+                    },
+                    "twin_actions": {
+                        "liked": true,
+                        "crowned": false,
+                        "disliked": false
+                    }
+                },
+                {
+                    "title": "Book A3",
+                    "image_url": "./static/img/book-cover.png",
+                    "user_actions": {
+                        "liked": true,
+                        "crowned": false,
+                        "disliked": false
+                    },
+                    "twin_actions": {
+                        "liked": false,
+                        "crowned": false,
+                        "disliked": true
+                    }
+                },
+                {
+                    "title": "Book A4",
+                    "image_url": "./static/img/book-cover.png",
+                    "user_actions": {
+                        "liked": false,
+                        "crowned": false,
+                        "disliked": true
+                    },
+                    "twin_actions": {
+                        "liked": false,
+                        "crowned": false,
+                        "disliked": true
+                    }
+                },
+                {
+                    "title": "Book A5",
+                    "image_url": "./static/img/book-cover.png",
+                    "user_actions": {
+                        "liked": true,
+                        "crowned": false,
+                        "disliked": false
+                    },
+                    "twin_actions": {
+                        "liked": true,
+                        "crowned": true,
+                        "disliked": false
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "label": "Book Twin #2",
+            "dna_match": "Medium",
+            "summary": {
+                "matching_books_count": 4,
+                "crowned": 1,
+                "liked": 2,
+                "disliked": 0
+            },
+            "matching_books": [
+                {
+                    "title": "Book B1",
+                    "image_url": "./static/img/book-cover.png",
+                    "user_actions": {
+                        "liked": true,
+                        "crowned": true,
+                        "disliked": false
+                    },
+                    "twin_actions": {
+                        "liked": true,
+                        "crowned": true,
+                        "disliked": false
+                    }
+                },
+                {
+                    "title": "Book B2",
+                    "image_url": "./static/img/book-cover.png",
+                    "user_actions": {
+                        "liked": true,
+                        "crowned": false,
+                        "disliked": false
+                    },
+                    "twin_actions": {
+                        "liked": true,
+                        "crowned": false,
+                        "disliked": false
+                    }
+                },
+                {
+                    "title": "Book B3",
+                    "image_url": "./static/img/book-cover.png",
+                    "user_actions": {
+                        "liked": false,
+                        "crowned": false,
+                        "disliked": true
+                    },
+                    "twin_actions": {
+                        "liked": false,
+                        "crowned": false,
+                        "disliked": true
+                    }
+                },
+                {
+                    "title": "Book B4",
+                    "image_url": "./static/img/book-cover.png",
+                    "user_actions": {
+                        "liked": true,
+                        "crowned": false,
+                        "disliked": false
+                    },
+                    "twin_actions": {
+                        "liked": false,
+                        "crowned": false,
+                        "disliked": true
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "label": "Book Twin #3",
+            "dna_match": "High",
+            "summary": {
+                "matching_books_count": 6,
+                "crowned": 3,
+                "liked": 4,
+                "disliked": 1
+            },
+            "matching_books": [
+                {
+                    "title": "Book C1",
+                    "image_url": "./static/img/book-cover.png",
+                    "user_actions": {
+                        "liked": true,
+                        "crowned": true,
+                        "disliked": false
+                    },
+                    "twin_actions": {
+                        "liked": true,
+                        "crowned": true,
+                        "disliked": false
+                    }
+                },
+                {
+                    "title": "Book C2",
+                    "image_url": "./static/img/book-cover.png",
+                    "user_actions": {
+                        "liked": true,
+                        "crowned": true,
+                        "disliked": false
+                    },
+                    "twin_actions": {
+                        "liked": true,
+                        "crowned": true,
+                        "disliked": false
+                    }
+                },
+                {
+                    "title": "Book C3",
+                    "image_url": "./static/img/book-cover.png",
+                    "user_actions": {
+                        "liked": true,
+                        "crowned": false,
+                        "disliked": false
+                    },
+                    "twin_actions": {
+                        "liked": true,
+                        "crowned": false,
+                        "disliked": false
+                    }
+                },
+                {
+                    "title": "Book C4",
+                    "image_url": "./static/img/book-cover.png",
+                    "user_actions": {
+                        "liked": false,
+                        "crowned": false,
+                        "disliked": true
+                    },
+                    "twin_actions": {
+                        "liked": false,
+                        "crowned": false,
+                        "disliked": true
+                    }
+                },
+                {
+                    "title": "Book C5",
+                    "image_url": "./static/img/book-cover.png",
+                    "user_actions": {
+                        "liked": true,
+                        "crowned": false,
+                        "disliked": false
+                    },
+                    "twin_actions": {
+                        "liked": false,
+                        "crowned": false,
+                        "disliked": true
+                    }
+                },
+                {
+                    "title": "Book C6",
+                    "image_url": "./static/img/book-cover.png",
+                    "user_actions": {
+                        "liked": true,
+                        "crowned": true,
+                        "disliked": false
+                    },
+                    "twin_actions": {
+                        "liked": true,
+                        "crowned": true,
+                        "disliked": false
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "label": "Book Twin #4",
+            "dna_match": "Low",
+            "summary": {
+                "matching_books_count": 3,
+                "crowned": 0,
+                "liked": 1,
+                "disliked": 1
+            },
+            "matching_books": [
+                {
+                    "title": "Book D1",
+                    "image_url": "./static/img/book-cover.png",
+                    "user_actions": {
+                        "liked": false,
+                        "crowned": false,
+                        "disliked": true
+                    },
+                    "twin_actions": {
+                        "liked": false,
+                        "crowned": false,
+                        "disliked": true
+                    }
+                },
+                {
+                    "title": "Book D2",
+                    "image_url": "./static/img/book-cover.png",
+                    "user_actions": {
+                        "liked": true,
+                        "crowned": false,
+                        "disliked": false
+                    },
+                    "twin_actions": {
+                        "liked": true,
+                        "crowned": false,
+                        "disliked": false
+                    }
+                },
+                {
+                    "title": "Book D3",
+                    "image_url": "./static/img/book-cover.png",
+                    "user_actions": {
+                        "liked": true,
+                        "crowned": false,
+                        "disliked": false
+                    },
+                    "twin_actions": {
+                        "liked": false,
+                        "crowned": false,
+                        "disliked": true
+                    }
+                }
+            ]
+        }
+    ],
+    "recommended": [
+        {
+            "title": "The Last Ember",
+            "image_url": "./static/img/book-cover.png",
+            "twin_reaction_count": {
+                "crowned": 5,
+                "liked": 12,
+                "disliked": 1
+            }
+        },
+        {
+            "title": "Killer Men",
+            "image_url": "./static/img/book-cover.png",
+            "twin_reaction_count": {
+                "crowned": 4,
+                "liked": 10,
+                "disliked": 2
+            }
+        },
+        {
+            "title": "The Gate of the Feral Gods",
+            "image_url": "./static/img/book-cover.png",
+            "twin_reaction_count": {
+                "crowned": 2,
+                "liked": 8,
+                "disliked": 3
+            }
+        },
+        {
+            "title": "Ashes of the Forgotten",
+            "image_url": "./static/img/book-cover.png",
+            "twin_reaction_count": {
+                "crowned": 3,
+                "liked": 9,
+                "disliked": 0
+            }
+        },
+        {
+            "title": "Winterbound",
+            "image_url": "./static/img/book-cover.png",
+            "twin_reaction_count": {
+                "crowned": 1,
+                "liked": 7,
+                "disliked": 2
+            }
+        },
+        {
+            "title": "Veil of the Falling Sky",
+            "image_url": "./static/img/book-cover.png",
+            "twin_reaction_count": {
+                "crowned": 4,
+                "liked": 11,
+                "disliked": 1
+            }
+        },
+        {
+            "title": "The Broken Spire",
+            "image_url": "./static/img/book-cover.png",
+            "twin_reaction_count": {
+                "crowned": 2,
+                "liked": 6,
+                "disliked": 4
+            }
+        },
+        {
+            "title": "Song of Hollow Stars",
+            "image_url": "./static/img/book-cover.png",
+            "twin_reaction_count": {
+                "crowned": 3,
+                "liked": 10,
+                "disliked": 1
+            }
+        }
+    ]
+}
