@@ -200,25 +200,24 @@
                 <div class="page-content">
 
                     <div class=" gap-sh-40 col-md col-12 py-4 px-4">
-                        <h1 class="h3 mb-4">My Book Twins <small>Beta</small></h1>
+                        <h1 class="h3 mb-4">My Book Twins</h1>
                         <p>How does this work: A Book Twin is someone who loves the books you love, and dislikes the
                             books you dislike.</p>
 
                         <section class="mb-4">
                             <div class=" p-3">
-                                <div class="row">
-                                    <div class="col-md-4 card">
+                                <div class="row justify-content-around">
+                                    <div class="col-md-4 card text-center py-2">
                                         <strong>{{ stats.books_analyzed }}</strong><small>books analyzed</small>
                                     </div>
                                     {% if not stats.is_pro %}
-                                    <div class="col-md-5 card">
-                                        <!-- <p class="">{{stats.next_update_at}}</p> -->
+                                    <div class="col-md-5 card text-center py-2">
                                         <strong>{{ stats.next_update_at }}</strong><small>next Book Twin
                                             update</small>
                                     </div>
 
-                                    <div class="col-md-3 card">
-                                        <div class="d-flex flex-column align-items-start">
+                                    <div class="col-md-3 ">
+                                        <div class="d-flex flex-column align-items-start upgrade-box p-2">
                                             <a class="btn btn-sm" href="#"> Upgrade to Pro</a>
                                             <p class=""> for real-time updates and unlimited twins</p>
 
@@ -236,14 +235,13 @@
 
                             <div id="book-twins-container" class="mt-3">
                                 {% for twin in twins %}
-                                {% if loop.index <= 3 %} <div class="card twin-card p-3 mb-3 w-100">
-                                    <div class="d-flex flex-row justify-content-between">
-                                        <div class="d-flex flex-row justify-content-around gap-4">
+                                {% if loop.index <= 3 %} <div class="card twin-card p-1 mb-3 w-100">
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <div class="d-flex flex-row justify-content-around align-items-center gap-4">
                                             <p>{{ twin.label }} </p>
                                             <div class="d-flex flex-column">
 
                                                 <p>DNA match: {{twin.dna_match}}</p>
-                                                <p>matching degree icon</p>
 
                                             </div>
                                             <div>{{ twin.matching_books_count }} matching books</div>
@@ -287,22 +285,22 @@
                                                     <div class="d-flex justify-content-center">
                                                         {% for book in book_group %}
 
-                                                        <div class="card ">
+                                                        <div class="p-2 rounded-4 text-center ">
                                                             <img src="{{ book.image_url }}" class="card-img-top p-3"
-                                                                alt="{{ book.title }}" style="height:100px;">
+                                                                alt="{{ book.title }}"style="height: 180px; object-fit: cover;">
                                                             <div class="card-body p-2 text-center">
 
                                                                 {% set user = book.user_actions %}
                                                                 {% set twin = book.twin_actions %}
 
                                                                 {% if user.crowned and twin.crowned %}
-                                                                <p class="card-text small mb-0"> Crowned by both</p>
+                                                                <p > Crowned by both</p>
 
                                                                 {% elif user.liked and twin.liked %}
-                                                                <p class="card-text small mb-0"> Liked by both</p>
+                                                                <p> Liked by both</p>
 
                                                                 {% else %}
-                                                                <p class="card-text small text-danger mb-0"> Disliked by
+                                                                <p> Disliked by
                                                                     both</p>
 
                                                                 {% endif %}
@@ -335,13 +333,12 @@
 
 
                                 <div class="card twin-card p-3 mb-3 w-100">
-                                    <div class="d-flex flex-row justify-content-between">
-                                        <div class="d-flex flex-row justify-content-around gap-4">
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <div class="d-flex flex-row justify-content-around align-items-center gap-4">
                                             <p>{{ twin.label }} </p>
                                             <div class="d-flex flex-column">
 
                                                 <p>DNA match: {{twin.dna_match}}</p>
-                                                <p>matching degree icon</p>
 
                                             </div>
                                             <div>{{ twin.matching_books_count }} matching books</div>
@@ -375,7 +372,6 @@
 
 
 
-
                                     <div class="collapse mt-2" id="collapse-{{ loop.index }}">
                                         <div id="carousel-{{ loop.index }}" class="carousel slide"
                                             style="max-width: 100%;">
@@ -385,27 +381,26 @@
                                                     <div class="d-flex justify-content-center">
                                                         {% for book in book_group %}
 
-                                                        <div class="card ">
+                                                        <div class="p-2 rounded-4  text-center ">
                                                             <img src="{{ book.image_url }}" class="card-img-top p-3"
-                                                                alt="{{ book.title }}" style="height:100px;">
-                                                            <div class="card-body p-2 text-center">
+                                                                alt="{{ book.title }}"
+                                                                style="height: 180px; object-fit: cover;">
 
-                                                                {% set user = book.user_actions %}
-                                                                {% set twin = book.twin_actions %}
+                                                            {% set user = book.user_actions %}
+                                                            {% set twin = book.twin_actions %}
 
-                                                                {% if user.crowned and twin.crowned %}
-                                                                <p class="card-text small mb-0"> Crowned by both</p>
+                                                            {% if user.crowned and twin.crowned %}
+                                                            <p> Crowned by both</p>
 
-                                                                {% elif user.liked and twin.liked %}
-                                                                <p class="card-text small mb-0"> Liked by both</p>
+                                                            {% elif user.liked and twin.liked %}
+                                                            <p> Liked by both</p>
 
-                                                                {% else %}
-                                                                <p class="card-text small text-danger mb-0"> Disliked by
-                                                                    both</p>
+                                                            {% else %}
+                                                            <p> Disliked by
+                                                                both</p>
 
-                                                                {% endif %}
+                                                            {% endif %}
 
-                                                            </div>
                                                         </div>
                                                         {% endfor %}
                                                     </div>
@@ -455,31 +450,11 @@
                         <div class="book-card-grid">
                             {% for book in recommended %}
 
-                            <!-- <div class="col">
-                                <div class="book-gallery">
-
-                                    <div class="book-gallery-book">
-                                        
-                                        <div class="book-gallery-cover">
-                                            <img src="{{ book.image_url }}" class="card-img-top p-3" alt="{{ book.title }}"
-                                            style="height:220px;">
-                                            
-                                        </div>
-                                        <p class="card-text small">Crowned by {{ book.twin_reaction_count.crowned }}
-                                                Book Twins</p>
-                                        <button class="rd-btn btn-outline-secondary"> + Add TBR</button>
-                                    </div>
-
-                                </div>
-                            </div> -->
-
                             <div class="p-4 bg-light rounded-4 shadow-sm text-center">
 
-                                <!-- Book Image -->
                                 <img src="{{ book.image_url }}" alt="Book Cover" class="img-fluid rounded"
                                     style="height: 180px; object-fit: cover;">
 
-                                <!-- Text -->
                                 <p class="mt-3 mb-2">
                                     Crowned by {{ book.twin_reaction_count.crowned }}
                                     Book Twins </p>
@@ -489,8 +464,7 @@
                                     <button class="btn btn-outline-dark btn-left">
                                         + Add TBR
                                     </button>
-                                    <button
-                                        class="btn btn-outline-dark dropdown-toggle dropdown-toggle-split btn-right"
+                                    <button class="btn btn-outline-dark dropdown-toggle dropdown-toggle-split btn-right"
                                         data-bs-toggle="dropdown"></button>
 
                                     <ul class="dropdown-menu dropdown-menu-end">

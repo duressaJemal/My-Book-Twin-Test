@@ -1,3 +1,7 @@
+p{
+    margin: 0;
+}
+
 [data-hide-btn] {
   display: none;
 }
@@ -38,4 +42,18 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.twin-card{
+    background-color: rgba(246, 247, 249, 1);;
+}
+
+.card {
+    background-color: rgba(246, 247, 249, 1);;
+
+}
+
+.upgrade-box {
+    border: 1px solid rgba(234, 236, 237, 1);
+    border-radius: 8px;
 }
